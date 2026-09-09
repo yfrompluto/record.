@@ -1,0 +1,27 @@
+# ==============================================
+#	Avoid git tracking files and .env file
+#	- ignore the .env file
+#	- ignore all npm related stuff
+#	- ignore Vite cache
+#	- ignore logs
+#	- ignore potential security leaks
+# ==============================================
+
+.env
+
+node_modules/
+dist/
+
+.vite/
+
+*.log
+npm-debug.log*
+
+.DS_Store
+.vscode/
+.idea/
+
+*.secret-id
+*.role-id
+*.crt
+*.key

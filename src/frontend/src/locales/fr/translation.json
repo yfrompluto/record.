@@ -1,0 +1,493 @@
+{
+   "auth":{
+      "brand":"Record.",
+      "login":{
+         "title":"Bon retour parmi nous,",
+         "subtitle":"Ajoutez un nouvel album à votre collection personnelle !",
+         "usernameLabel":"nom d'utilisateur",
+         "passwordLabel":"mot de passe",
+         "submit":"Se connecter",
+         "submitting":"Connexion...",
+         "noAccount":"Pas encore de compte ?",
+         "signUpLink":"S'inscrire",
+         "error":"Nom d'utilisateur et/ou mot de passe incorrect !"
+      },
+      "register":{
+         "title":"Bienvenue,",
+         "subtitle":"Ajoutez n'importe quel album à votre collection et rec’ it !",
+         "usernameLabel":"Nom d'utilisateur",
+			"usernameHint": "4 à 20 caractères. Lettres, chiffres, _ et . uniquement.",
+         "emailLabel":"Email",
+         "passwordLabel":"Mot de passe",
+         "submit":"S'inscrire",
+         "submitting":"Inscription...",
+         "hasAccount":"Déjà un compte ?",
+         "signInLink":"Se connecter",
+         "passwordRules":{
+            "minLength":"Au moins 8 caractères",
+            "uppercase":"Une lettre majuscule",
+            "lowercase":"Une lettre minuscule",
+            "digit":"Un chiffre",
+            "specialChar":"Un caractère spécial"
+         },
+         "errors":{
+            "passwordInvalid":"Le mot de passe ne respecte pas toutes les exigences.",
+            "conflict":"Nom d'utilisateur ou email déjà utilisé.",
+            "badRequest":"Email et/ou mot de passe invalide.",
+            "generic":"Une erreur est survenue... Veuillez réessayer."
+         }
+      },
+      "showPassword":"Afficher le mot de passe",
+      "hidePassword":"Masquer le mot de passe"
+   },
+
+   "languageSwitcher":{
+      "label":"Choisir la langue"
+   },
+
+   "common":{
+      "unknownArtist":"Artiste inconnu",
+      "backToTop":"Retour en haut",
+      "starsRating":"{{count}} sur 5 étoiles",
+      "valid":"valide",
+      "invalid":"invalide"
+   },
+
+   "visibility":{
+      "public":"Publique",
+      "private":"Privé"
+   },
+
+   "navbar":{
+      "brand":"Record.",
+      "searchLabel":"Rechercher un album",
+      "searchPlaceholder":"Recherchez votre musique préférée...",
+      "searching":"Recherche...",
+      "noResults":"Aucun résultat trouvé..",
+      "searchError":"La recherche a échoué. Veuillez réessayer dans un instant.",
+      "clearHistory":"Effacer l'historique",
+      "links":{
+         "explore":"Explorer",
+         "collection":"Collection",
+         "playlists":"Playlists",
+         "friends":"Amis",
+         "blindTest":"Blind Test",
+         "myProfile":"Mon Profil",
+         "chat":"Messages"
+      },
+      "openProfilePanel":"Ouvrir le profil",
+      "recentSearches":"Recherches récentes",
+      "skipToContent":"Aller au contenu principal",
+      "mainNavigation":"Navigation principale"
+   },
+
+   "footer":{
+      "privacyPolicy":"Politique de confidentialité",
+      "termsOfService":"Conditions d'utilisation",
+      "systemStatus":"État du système",
+      "copyright":"© {{year}} Record. Tous droits réservés."
+   },
+
+   "notFound":{
+      "pageNotFound":"Oups, page introuvable."
+   },
+
+   "album":{
+      "coverAlt":"Cover de {{title}}",
+      "noCoverAlt":"Aucune cover disponible pour {{title}} ",
+      "openAlbum":"Ouvrir {{title}}",
+      "starRating":"Note: {{rating}}/5"
+   },
+
+   "profile":{
+      "message":"💬 Message",
+      "tabs":{
+         "activity":"Activité",
+         "recs":"Recs",
+         "playlists":"Playlists",
+         "friends":"Amis"
+      },
+      "sections":"Sections du profil",
+      "favs":"Favs",
+      "noFavsYet":"—",
+      "favCoverAlt":"{{title}} cover",
+      "noCover":"Cover indisponible",
+      "recentRecs":"Derniers Recs",
+      "recentActivity":"Activités récentes",
+      "noRecsYet":"Aucun recs d'album pour l'instant.",
+      "noActivityYet":"Aucune session d'écoute pour l'instant.",
+      "noRecsTab":"Alors, un avis ? Rec’ it ! ",
+      "playlistsComingSoon":"Les playlists arrivent bientôt.",
+      "noFriendsYet":"Aucun ami pour l'instant.",
+      "relationship":{
+         "add":"+ Ajouter",
+         "onHold":"En attente...",
+         "requestReceived":"Demande reçue",
+         "friend":"✓ Ami",
+         "blocked":"Bloqué"
+      }
+   },
+
+   "profilePanel":{
+      "dialogLabel":"Mon profil",
+      "editProfile":"Modifier le profil",
+      "backToView":"Retour à l'affichage du profil",
+      "closePanel":"Fermer l'onglet de profil",
+      "updatePicture":"Modifier la photo de profil",
+      "update":"Modifier",
+      "noBio":"—",
+      "stats":{
+         "sectionTitle":"Statistiques de l'utilisateur",
+         "ratings":"Recs",
+         "collection":"Collection",
+         "playlists":"Playlists",
+         "avgRating":"Moyenne",
+         "favoriteArtist":"Artiste Préféré"
+      },
+      "viewFullProfile":"Voir mon profil complet →",
+      "chatAriaLabel":"Discussion ({{count}} messages non lus)",
+      "form":{
+         "displayNameLabel":"Surnom",
+         "bioLabel":"Décrivez-vous en un couplet...",
+         "saving":"Sauvegarde des changements...",
+         "save":"Sauvegarder"
+      },
+      "errors":{
+         "avatarUploadFailed":"Oups.. Échec du chargement de la photo de profil.",
+         "saveFailed":"Une erreur est survenue. Veuillez réessayer."
+      },
+      "signOut":"Se déconnecter"
+   },
+
+   "collection":{
+      "title":"Ma Collection",
+      "searchLabel":"Chercher dans la collection",
+      "searchPlaceholder":"Recherche par album, titre, artiste...",
+      "loading":"Chargement de la collection...",
+      "emptySearch":"Aucun résultat correspondant à la recherche.",
+      "emptyDefault":"La collection est vide, commencez-la !",
+      "noCover":"Cover introuvable",
+      "backToTop":"Retour en haut",
+      "coverAlt":"Cover de {{title}}",
+      "favorite":{
+         "add":"Ajouter {{title}} aux albums favoris",
+         "remove":"Retirer {{title}} albums favoris"
+      },
+      "pagination":{
+         "ariaLabel":"Pagination"
+      },
+      "errors":{
+         "loadFailed":"Une erreur est survenue lors du chargement de la collection. Veuillez réessayer dans un instant.",
+         "maxFavorites":"Mince! Il ne peut y avoir que 3 albums en favoris.",
+         "favoriteUpdateFailed":"Une erreur est survenue lors de l’ajout d’un album aux favoris. Veuillez réessayer dans un instant."
+      }
+   },
+
+   "playlists":{
+      "newPlaylist":"+ Créer une nouvelle playlist",
+      "cancelCreate":"Annuler",
+      "emptyMine":"Une ambiance, un souvenir ? Créez une playlist.",
+      "emptyUser":"Cet utilisateur n'a pas de playlist publique.",
+      "viewPlaylist":"Voir la playlist",
+      "makePublic":"Rendre la playlist publique",
+      "makePrivate":"Rendre la playlist privée",
+      "visibilityPrivateBadge":"Privée",
+      "visibilityPublicBadge":"Publique",
+      "panel":{
+         "contents":"Contenu",
+         "loading":"Chargement...",
+         "empty":"Aucun album pour l'instant.",
+         "edit":"Modifier",
+         "deletePlaylist":"Supprimer la playlist",
+         "addAlbumPlaceholder":"Chercher un album à ajouter...",
+         "searching":"Recherche...",
+         "add":"Ajouter",
+         "deleteConfirm":"Supprimer la playlist \"{{title}}\" ? Cette action est irréversible.",
+         "errors":{
+            "loadFailed":"Impossible de charger cette playlist.",
+            "searchFailed":"Échec de la recherche.",
+            "deleteFailed":"Impossible de supprimer cette playlist.",
+            "addFailed":"Impossible d'ajouter cet album.",
+            "removeFailed":"Impossible de retirer cet album."
+         }
+      },
+      "errors":{
+         "titleRequired":"Oups, il manque le titre !",
+         "createFailed":"Échec lors de la création de la playlist.",
+         "saveFailed":"Impossible d'enregistrer les modifications."
+      },
+      "form":{
+         "titleLabel":"Titre",
+         "descriptionLabel":"Description...",
+         "visibilityPrivate":"Privée",
+         "visibilityPublic":"Publique",
+         "submit":"Créer une playlist",
+         "creating":"Création de la playlist...",
+         "save":"Enregistrer",
+         "saving":"Enregistrement...",
+         "cancel":"Annuler"
+      }
+   },
+
+   "status":{
+      "title":"État du système",
+      "allOperational":"Tous les systèmes sont opérationnels",
+      "disruption":"Perturbation de service détectée",
+      "componentStatus":{
+         "up":"opérationnel",
+         "down":"hors service"
+      },
+      "error":"Impossible de joindre le service de vérification ({{code}}).",
+      "networkError":"erreur réseau",
+      "lastChecked":"Dernière vérification : {{time}}"
+   },
+
+   "chat":{
+      "title":"Messages",
+      "noFriendsYet":"Pas encore d'amis à qui parler.",
+      "selectedFriend":"Sélectionne un ami pour commencer à parler.",
+		"viewProfile": "Voir le profil de {{name}}",
+      "noMessages":"Aucun message pour l'instant. Recommandez un EP à un ami !",
+      "messagePlaceholder":"Message à {{name}}...",
+      "typing":"En train d'écrire...",
+		"send": "Envoyer le message",
+      "online":"En ligne",
+      "offline":"Hors ligne",
+      "shareAlbum":"Partager un album",
+      "inviteBlindTest":"Inviter à un Blind Test",
+      "searchAlbumPlaceholder":"Chercher un album...",
+      "noAlbumsFound":"Aucun album trouvé.",
+      "loadingAlbum":"Chargement de l'album...",
+      "sharedAlbum":"Album partagé",
+      "blindTestInvite":"Invitation au Blind Test",
+      "tapToJoin":"Cliquer pour rejoindre la partie"
+   },
+
+   "friends":{
+      "title":"Amis",
+      "tabs":{
+         "friends":"Amis",
+         "requests":"Demandes",
+         "blocked":"Bloqués",
+         "find":"Trouver"
+      },
+      "noFriendsYet":"Pas encore d'amis.... Essayez « Trouver » !",
+      "noPendingRequests":"Aucune demande en attente.",
+      "noOneBlocked":"0 utilisateur bloqué.",
+      "noResults":"Aucun résultat.",
+      "searching":"Recherche...",
+      "searchPlaceholder":"Chercher un pseudo...",
+      "actions":{
+         "message":"Message",
+         "remove":"Retirer",
+         "block":"Bloquer",
+         "unblock":"Débloquer",
+         "accept":"Accepter",
+         "decline":"Refuser",
+         "add":"Ajouter"
+      },
+      "alerts":{
+         "requestInProgress":"En attente d'une réponse de la part de cet utilisateur..",
+         "cannotAddSelf":"Vous ne pouvez vous ajouter vous-même en ami.",
+         "generic":"Oups, une erreur est survenue.",
+		 "blockedUser": "Utilisateur introuvable"
+      }
+   },
+
+   "recpage":{
+      "collectionError":"Oh là , il est momentanément impossible de mettre à jour la collection.",
+      "playlistUpdateError":"Oh là, il est momentanément impossible de mettre à jour cette playlist.",
+      "createPlaylistError":"Oh là, il y a eu une erreur lors de la création de la playlist.",
+      "saveErrorGeneric":"La notation d’un rec se fait sur l’album entier, ou sur au moins un des titres.",
+      "unknownArtist":"Artiste inconnu",
+      "inCollection":"Ajouté à votre collection",
+      "addToCollection":"Ajouter à la collection",
+      "inPlaylists_one":"Ajouté dans {{count}} playlist",
+      "inPlaylists_other":"Ajouté dans {{count}} playlists",
+      "addToPlaylist":"Ajouter à une playlist",
+      "loadingPlaylists":"Chargement des playlists…",
+      "noPlaylists":"Aucune playlist pour l'instant.",
+      "playlistNamePlaceholder":"Nom de la playlist",
+      "newPlaylist":"Nouvelle playlist",
+      "tracklist":"Liste des titres",
+      "noTracklist":"Oups, aucune liste de titres disponible.",
+      "hideReview":"- Masquer la review",
+      "addReview":"+ Ajouter une review",
+      "reviewLabel":"Votre review pour cet album",
+      "reviewPlaceholder":"Votre avis sur cet album en quelques mots...",
+      "saving":"Rec",
+      "recIt":"Rec it!",
+      "recVisibleNotice":"Ce rec sera visible sur votre profil public !",
+      "loadingAlbum":"Chargement de l'album...",
+      "notFound":"Oups, cet  album est introuvable.",
+      "loadError":"Le chargement de cet album semble avoir momentanément échoué. Veuillez réessayer dans un instant."
+	},
+
+	"home":{
+		"pageTitle" : "Page d'accueil",
+		"friendsActivity":"Activité des amis",
+		"forYou":"Vous aimeriez",
+		"noActivity":"Aucune activité pour l'instant.. Ajoutez des amis pour voir ce qu'ils écoutent !",
+		"noRecs":"Notez quelques albums pour en découvrir d'avantage !",
+		"rated":"a noté"
+	},
+
+	"explore":{
+		"title":"Explorer",
+		"surpriseMe":"Surprise",
+		"loading":"Chargement ...",
+		"trending":"Tendances de la semaine",
+		"topRated":"Les mieux notés",
+		"nothingTrending":"Rien en tendance pour l'instant.",
+		"noRatings":"Aucune note pour l'instant."
+	},
+
+	"notifications":{
+		"title":"Notifications",
+		"ariaLabel":"Notifications ({{count}} non lues)",
+		"ariaLabelNoUnread":"Notifications",
+		"unreadAnnounce":"{{count}} notifications non lues",
+		"noUnreadAnnounce":"Aucune notification non lue",
+		"markAllAsRead":"Tout marquer comme lu",
+		"empty":"Aucune notification pour l'instant.",
+		"someone":"Quelqu'un",
+		"types":{
+		"friendRequest":"{{name}} vous a envoyé une demande d'ami",
+		"friendRequestAccepted":"{{name}} a accepté votre demande d'ami",
+		"newMessage":"{{name}} vous a envoyé un message",
+		"friendAlbumRated":"{{name}} a rec' un album que tu as aussi rec'",
+		"ratingLikedWithTitle":"{{name}} a aimé votre rec' pour « {{title}} »",
+		"ratingLiked":"{{name}} a aimé votre rec",
+		"ratingDeletedWithTitle":"{{name}} a supprimé le rec que tu avais aimé pour « {{title}} »",
+		"ratingDeleted":"{{name}} a supprimé un rec que tu avais aimé",
+		"default":"Nouvelle notification"
+		}
+	},
+
+	"privacyPolicy":{
+		"title":"Politique de confidentialité",
+		"lastUpdated":"Dernière mise à jour : juillet 2026",
+		"sections":{
+		"whoWeAre":{
+			"heading":"1. Qui sommes-nous ?",
+			"body":"Record est une plateforme de notation musicale et une plateforme sociale développée dans le cadre du cursus 42 (projet ft_transcendence). Cette politique explique quelles informations nous collectons lorsque tu utilises Record, pourquoi nous les collectons, et comment elles sont stockées et protégées."
+		},
+		"infoWeCollect":{
+			"heading":"2. Informations que nous collectons",
+			"account":"<strong>Informations de compte :</strong> nom d'utilisateur, adresse email, et un mot de passe hashé de façon sécurisée (nous ne stockons jamais votre mot de passe en clair).",
+			"profile":"<strong>Informations de profil :</strong> avatar optionnel, surnom et biographie, que vous pouvez choisir d'ajouter ou de laisser vides.",
+			"activity":"<strong>Données d'activité :</strong> les albums et chansons que vous notez, les avis que vous rédigez, et votre collection d’albums.",
+			"social":"<strong>Données sociales :</strong> votre liste d'amis, les demandes d'ami en attente, et les messages échangés via la fonctionnalité de discussion.",
+			"technical":"<strong>Données techniques :</strong> un cookie de session utilisé pour vous maintenir connecté.e. Ce cookie est essentiel au fonctionnement du service et n'est pas utilisé à des fins de suivi ou publicitaires."
+		},
+		"howWeUse":{
+			"heading":"3. Comment utilisons-nous vos informations",
+			"body":"Vos informations sont utilisées uniquement pour faire fonctionner Record : vous authentifier, afficher votre profil et vos notes aux autres utilisateurs (selon vos paramètres), permettre les fonctionnalités relatives aux ‘amis’ et de discussion, ainsi que sécuriser la plateforme. Nous ne vendons pas vos données, et nous ne les partageons pas avec des tiers à des fins marketing."
+		},
+		"howWeProtect":{
+			"heading":"4. Comment protégeons-nous vos données",
+			"body":"Les mots de passe sont hashés avant stockage et ne sont jamais lisibles par qui que ce soit, y compris notre équipe. Toute communication entre votre navigateur et nos serveurs est chiffrée (HTTPS). L'accès aux secrets de notre infrastructure est restreint via un système de gestion de secrets dédié avec des contrôles d'accès au moindre privilège. Nos serveurs sont également protégés par un pare-feu applicatif qui filtre le trafic malveillant."
+		},
+		"yourRights":{
+			"heading":"5. Vos droits",
+			"body":"Vous pouvez accéder, corriger ou supprimer les informations de votre profil à tout moment depuis les paramètres de votre compte. Si vous souhaitez supprimer définitivement votre compte et les données associées, ou si vous avez une question concernant vos données personnelles, contactez un membre de l'équipe Record."
+		},
+		"changes":{
+			"heading":"6. Modifications de cette politique",
+			"body":"Cette politique peut être mise à jour à mesure que le projet évolue. La poursuite de l'utilisation de Record après la publication de modifications vaut acceptation de la politique révisée."
+		}
+		}
+	},
+
+	"termsOfService":{
+		"title":"Conditions d'utilisation",
+		"lastUpdated":"Dernière mise à jour : juillet 2026",
+		"sections":{
+		"acceptance":{
+			"heading":"1. Acceptation des conditions",
+			"body":"En créant un compte et en utilisant Record, vous acceptez ces Conditions d'utilisation. Si vous n'êtes pas d'accord avec elles, merci de ne pas utiliser la plateforme."
+		},
+		"accountResponsibilities":{
+			"heading":"2. Responsabilités liées au compte",
+			"item1":"Vous devez fournir des informations exactes lors de la création de votre compte.",
+			"item2":"Vous êtes responsable de la confidentialité de votre mot de passe.",
+			"item3":"Vous devez avoir l'âge légal requis pour consentir à l'utilisation de services en ligne dans votre pays.",
+			"item4":"Un compte par personne ; usurper l'identité d'un autre utilisateur n'est pas autorisé."
+		},
+		"acceptableUse":{
+			"heading":"3. Utilisation acceptable",
+			"intro":"En utilisant Record, vous vous engagez à ne pas :",
+			"item1":"Publier du contenu illégal, harcelant, haineux, ou portant atteinte aux droits d'autrui.",
+			"item2":"Tenter de perturber, pirater, ou accéder sans autorisation à la plateforme ou aux comptes d'autres utilisateurs.",
+			"item3":"Utiliser des outils automatisés pour extraire des données.",
+			"item4":"Usurper l'identité d'une autre personne ou déformer votre affiliation avec quiconque."
+		},
+		"content":{
+			"heading":"4. Contenu que vous soumettez",
+			"body":"Vous conservez la propriété des avis, notes et contenus de profil que vous soumettez. En publiant du contenu sur Record, vous nous accordez une licence non exclusive pour l'afficher au sein de la plateforme comme prévu (par exemple, montrer vos avis à d'autres utilisateurs). Vous êtes responsable du contenu que vous publiez."
+		},
+		"availability":{
+			"heading":"5. Disponibilité",
+			"body":"Record est un projet étudiant fourni « tel quel », sans garantie de disponibilité ininterrompue. Vous pouvez vérifier l'état de fonctionnement actuel de nos services sur notre <statusPageLink>page de statut du système</statusPageLink>.",
+			"statusPageLinkText":"page de statut"
+		},
+		"termination":{
+			"heading":"6. Résiliation",
+			"body":"Nous nous réservons le droit de suspendre ou de résilier les comptes qui enfreignent ces conditions."
+		},
+		"changes":{
+			"heading":"7. Modifications de ces conditions",
+			"body":"Ces conditions peuvent être mises à jour à mesure que le projet évolue. La poursuite de l'utilisation de Record après la publication de modifications vaut acceptation des conditions révisées."
+		}
+		}
+	},
+
+	"recs":{
+		"coverAlt":{
+		"fallback":"Cover indisponible pour {{title}}",
+		"default":"{{title}} cover"
+		},
+		"noReview":"—",
+		"tracklist":"Liste des titres",
+		"noTracklist":"Liste des titres non-disponible.",
+		"notRated":"Pas noté",
+		"like":"J'aime",
+		"unlike":"Je n'aime pas",
+		"delete":"Supprimer le rec",
+		"deleteConfirm":"Supprimer le rec ? Cette action est irréversible.",
+		"fullRec":"Voir le rec",
+		"collapse":"Masquer"
+	},
+
+	"rating":{
+		"rateValue":"Note {{value}} sur 5"
+	},
+
+	"blindtest":{
+		"title":"Blind Test",
+		"playSolo":"Jouer en solo",
+		"inviteFriends":"Inviter des amis",
+		"noFriendsYet":"Vous n'avez pas encore d'amis à inviter.",
+		"selectedCount_one":"{{count}} sélectionné",
+		"selectedCount_other":"{{count}} sélectionnés",
+		"maxPlayersNote":"(max 10 joueurs par partie)",
+		"invite":"Inviter",
+		"createGame":"Créer la partie ({{count}}/10 joueurs)",
+		"playersPresent":"Joueurs présents : {{count}}/10",
+		"round":"Manche {{current}}/{{total}}",
+		"waitingForHost":"En attente que l'hôte lance la partie...",
+		"playersJoined_one":"{{count}} joueur a rejoint",
+		"playersJoined_other":"{{count}} joueurs ont rejoint",
+		"startGame":"Démarrer la partie",
+		"correctAnswerWas":"La bonne réponse était :",
+		"gameOver":"Partie terminée !",
+		"quit":"Quitter",
+		"errors":{
+		"roomFull":"Cette partie est déjà pleine (10 joueurs max)",
+		"timeUp":"Le temps est écoulé pour cette manche",
+		"gameFinished":"Cette partie est déjà terminée",
+		"notHost":"Seul l'hôte peut démarrer la partie",
+		"generic":"Une erreur est survenue"
+		}
+	}
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1740"
+   height="2048"
+   viewBox="0 0 1740 2048"
+   sodipodi:docname="chat.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   inkscape:export-filename="album.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.26689138"
+     inkscape:cx="385.92479"
+     inkscape:cy="646.33035"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="1740"
+       height="2048"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <path
+      fill="currentColor"
+       d="m 610.55032,1674.0351 c -35.74851,-4.1074 -74.44688,-14.9011 -110.88545,-30.9282 -64.06648,-28.1789 -119.42017,-75.1837 -160.23771,-136.0699 -47.44595,-70.7733 -69.87654,-161.0861 -61.24617,-246.5969 8.98967,-89.068 49.10411,-171.5789 113.6911,-233.8495 23.9796,-23.1196 35.76876,-32.43104 61.57017,-48.63064 101.10298,-63.4776 229.88801,-75.4114 340.33457,-31.5373 94.17621,37.4106 167.78535,109.39634 209.16077,204.54824 3.9432,9.0677 7.1579,14.2111 7.7741,12.4382 1.1676,-3.3581 30.0065,-110.4317 35.7583,-132.7643 2.0103,-7.8047 14.1585,-53.41674 26.9962,-101.36004 12.8374,-47.9431 25.6404,-95.8358 28.4509,-106.428 7.2868,-27.4623 9.7063,-36.5091 22.2268,-83.11518 11.0164,-41.00777 35.798,-133.54014 65.4209,-244.27761 8.351,-31.21892 17.4699,-65.42791 20.2642,-76.02006 20.2789,-76.87335 25.5653,-94.45885 29.3723,-97.71078 2.2184,-1.89528 5.1295,-2.96177 6.4689,-2.36995 2.786,1.23122 18.6382,19.703 45.0059,52.44329 108.7604,135.04499 120.3131,149.97878 117.8929,152.39872 -0.4983,0.49827 -33.4807,-7.41799 -73.2944,-17.59166 -39.8137,-10.17366 -72.7646,-18.12163 -73.2238,-17.66219 -0.4591,0.45944 -14.0848,50.46148 -30.2785,111.11558 -16.1934,60.65414 -36.1927,135.36684 -44.4428,166.02827 -8.2501,30.66137 -16.8045,62.58987 -19.0097,70.95207 -4.4034,16.6972 -47.5963,178.13034 -78.3761,292.93054 -20.7353,77.3371 -25.3503,94.6219 -30.0393,112.5096 -1.6073,6.1325 -9.7713,37.1486 -18.1426,68.9247 -8.3712,31.7765 -17.2439,66.4418 -19.717,77.0335 -7.9884,34.2119 -27.78964,80.5007 -47.94071,112.0706 -54.13811,84.8162 -137.74512,143.7628 -236.05432,166.4289 -35.66784,8.2239 -90.90292,11.2955 -127.49945,7.09 z"
+       id="path1-7"
+       inkscape:label="music"
+       sodipodi:nodetypes="sssscsscssssscsssssssssssssssss" />
+  </g>
+</svg>

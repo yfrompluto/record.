@@ -1,0 +1,490 @@
+{
+	"auth": {
+		"brand": "Record.",
+		"login": {
+			"title": "おかえりなさい、",
+			"subtitle": "新しいアルバムをあなたのコレクションに追加しよう！",
+			"usernameLabel": "ユーザー名",
+			"passwordLabel": "パスワード",
+			"submit": "ログイン",
+			"submitting": "ログイン中…",
+			"noAccount": "まだアカウントをお持ちでないですか？",
+			"signUpLink": "新規登録",
+			"error": "ユーザー名またはパスワードが間違っています！"
+		},
+		"register": {
+			"title": "ようこそ、",
+			"subtitle": "好きなアルバムをコレクションに追加して、おすすめしよう！",
+			"usernameLabel": "ユーザー名",
+			"usernameHint": "4～20文字。使用できる文字は英数字、_、. のみです。",
+			"emailLabel": "メールアドレス",
+			"passwordLabel": "パスワード",
+			"submit": "新規登録",
+			"submitting": "登録中…",
+			"hasAccount": "すでにアカウントをお持ちですか？",
+			"signInLink": "ログイン",
+			"passwordRules": {
+				"minLength": "8文字以上",
+				"uppercase": "大文字を1文字以上",
+				"lowercase": "小文字を1文字以上",
+				"digit": "数字を1文字以上",
+				"specialChar": "特殊文字を1文字以上"
+			},
+		"errors": {
+			"passwordInvalid": "パスワードが必要な条件をすべて満たしていません。",
+			"conflict": "そのユーザー名またはメールアドレスはすでに使用されています。",
+			"badRequest": "メールアドレスまたはパスワードが無効です。",
+			"generic": "問題が発生しました…もう一度お試しください。"
+			}
+		},
+		"showPassword": "パスワードを表示",
+		"hidePassword": "パスワードを非表示"
+	},
+
+	"languageSwitcher": { "label": "言語を選択" },
+	
+	"common": {
+		"unknownArtist": "アーティスト不明",
+		"backToTop": "トップへ戻る",
+		"starsRating": "5つ星のうち{{count}}",
+		"valid": "有効",
+      "invalid": "無効"
+
+	},
+
+	"visibility": {
+		"public": "公開",
+		"private": "非公開"
+	},
+	
+	"album": {
+		"coverAlt": "{{title}}のアルバムジャケット",
+		"noCoverAlt": "{{title}}のアルバムジャケットはありません",
+		"openAlbum": "{{title}}を開く",
+		"starRating": "評価：{{rating}}/5"
+	},
+
+	"navbar": {
+		"brand": "Record.",
+		"searchLabel": "アルバムを検索",
+		"searchPlaceholder": "お気に入りの音楽を探そう…",
+		"searching": "検索中…",
+		"noResults": "結果が見つかりませんでした…",
+		"searchError": "検索に失敗しました。しばらくしてからもう一度お試しください.",
+		"clearHistory": "検索履歴を削除",
+		"links": {
+			"explore": "探索",
+			"collection": "コレクション",
+			"playlists": "プレイリスト",
+			"friends": "友達",
+			"blindTest": "ブラインドテスト",
+			"myProfile": "プロフィール",
+			"chat": "チャット"
+		},
+		"openProfilePanel": "プロフィールパネルを開く",
+		"recentSearches": "最近の研究",
+		"skipToContent" : "メインコンテンツへスキップ", 
+		"mainNavigation" : "メインナビゲーション"
+	},
+
+	"footer": {
+		"privacyPolicy": "プライバシーポリシー",
+		"termsOfService": "利用規約",
+		"systemStatus": "システムステータス",
+		"copyright": "© {{year}} Record. すべての権利を保有."
+	},
+
+	"profile": {
+		"message": "💬 メッセージ",
+		"tabs": {
+			"activity": "アクティビティ",
+			"recs": "Rec",
+			"playlists": "プレイリスト",
+			"friends": "友達"
+		},
+		"sections": "プロフィールセクション",
+		"favs": "お気に入り",
+		"noFavsYet": "まだお気に入りのアルバムはありません。",
+		"favCoverAlt": "{{title}}のお気に入りアルバムのジャケット",
+		"noCover": "ジャケットなし",
+		"recentRecs": "最近のRec",
+		"recentActivity": "最近のアクティビティ",
+		"noRecsYet": "まだアルバムのRecはありません。",
+		"noActivityYet": "まだ視聴履歴はありません。",
+		"noRecsTab": "まだRecはありません。",
+		"playlistsComingSoon": "プレイリスト機能は近日公開予定です。",
+		"noFriendsYet": "まだ友達はいません。",
+		"relationship": {
+			"add": "+ 追加",
+			"onHold": "申請中…",
+			"requestReceived": "友達申請が届いています",
+			"friend": "✓ 友達",
+			"blocked": "ブロック済み"
+		}
+	},
+
+	"profilePanel": {
+		"dialogLabel": "マイプロフィール",
+		"editProfile": "プロフィールを編集",
+		"backToView": "プロフィール表示に戻る",
+		"closePanel": "プロフィールパネルを閉じる",
+		"updatePicture": "プロフィール写真を変更",
+		"update": "変更",
+		"noBio": "—",
+		"stats": {
+			"sectionTitle": "アクティビティ統計",
+			"recs": "Recs",
+			"collection": "コレクション",
+			"playlists": "コレクション",
+			"avgRating": "平均",
+			"favoriteArtist": "お気に入りのアーティスト"
+		},
+		"viewFullProfile": "プロフィール全体を見る →",
+		"chatAriaLabel": "チャット（未読{{count}}件）",
+		"form": {
+			"displayNameLabel": "表示名",
+			"bioLabel": "自己紹介を書いてみよう…",
+			"saving": "保存中…",
+			"save": "保存"
+		},
+		"errors": {
+			"avatarUploadFailed": "プロフィール写真の読み込みに失敗しました。",
+			"saveFailed": "問題が発生しました。もう一度お試しください。"
+		},
+		"signOut": "ログアウト"
+	},
+
+	"notFound": {
+      "pageNotFound": "ページが見つかりません。"
+   },
+
+	"collection": {
+		"title": "コレクション",
+		"searchLabel": "コレクションを検索",
+		"searchPlaceholder": "アルバムを検索…",
+		"loading": "読み込み中…",
+		"emptySearch": "検索結果が見つかりませんでした。",
+		"emptyDefault": "コレクションにアルバムがありません。",
+		"noCover": "ジャケットなし",
+		"backToTop": "トップに戻る",
+		"coverAlt": "{{title}}のアルバムジャケット",
+		"favorite": {
+			"add": "お気に入りに追加",
+			"remove": "お気に入りから削除"
+		},
+		"pagination": {
+			"ariaLabel": "コレクションのページ"
+		},
+		"errors": {
+			"loadFailed": "コレクションの読み込みに失敗しました。",
+			"maxFavorites": "お気に入りに追加できるアルバムの上限に達しました。",
+			"favoriteUpdateFailed": "お気に入りの更新に失敗しました。"
+		}
+	},
+
+	"playlists": {
+		"newPlaylist": "+ 新しいプレイリストを作成",
+		"cancelCreate": "キャンセル",
+		"emptyMine": "お気に入りの雰囲気や思い出を、プレイリストにしてみよう。",
+		"emptyUser": "このユーザーの公開プレイリストはありません。",
+		"viewPlaylist": "プレイリストを見る",
+		"makePublic": "プレイリストを公開する",
+		"makePrivate": "プレイリストを非公開にする",
+		"visibilityPrivateBadge": "非公開",
+		"visibilityPublicBadge": "公開",
+		"panel": {
+			"contents": "収録アルバム",
+			"loading": "読み込み中…",
+			"empty": "まだアルバムがありません。",
+			"edit": "編集",
+			"deletePlaylist": "プレイリストを削除",
+			"addAlbumPlaceholder": "アルバムを検索して追加…",
+			"searching": "検索中…",
+			"add": "追加",
+			"errors": {
+				"loadFailed": "プレイリストの読み込みに失敗しました。",
+				"searchFailed": "アルバムの検索に失敗しました。",
+				"deleteFailed": "プレイリストの削除に失敗しました。",
+				"addFailed": "アルバムをプレイリストに追加できませんでした。",
+				"removeFailed": "アルバムをプレイリストから削除できませんでした。"
+			}
+		},
+		"errors": {
+			"titleRequired": "タイトルを入力してください。",
+			"createFailed": "プレイリストの作成に失敗しました。",
+			"saveFailed": "プレイリストの保存に失敗しました。"
+		},
+		"form": {
+			"titleLabel": "タイトル",
+			"descriptionLabel": "説明...",
+			"visibilityPrivate": "非公開",
+			"visibilityPublic": "公開",
+			"submit": "プレイリストを作成",
+			"creating": "作成中…",
+			"save": "保存",
+			"saving": "保存中…",
+			"cancel": "キャンセル"
+		}
+	},
+
+	"recpage":{
+		"collectionError": "コレクションの管理中にエラーが発生しました。",
+		"playlistUpdateError": "プレイリストの更新中にエラーが発生しました",
+		"createPlaylistError": "プレイリストの作成中にエラーが発生しました",
+		"saveErrorGeneric": "お気に入りを保存できませんでした。アルバム全体を評価するか、少なくとも1曲を評価してください",
+		"unknownArtist": "アーティスト不明",
+		"inCollection": "マイコレクション内",
+		"addToCollection": "コレクションに追加",
+		"inPlaylists_one": "{{count}}のプレイリストに含まれています",
+		"inPlaylists_other": "{{count}}のプレイリストに含まれています",
+		"addToPlaylist": "プレイリストに追加",
+		"loadingPlaylists": "プレイリストを読み込んでいます…",
+		"noPlaylists": "まだプレイリストがありません。",
+		"playlistNamePlaceholder": "プレイリスト名",
+		"newPlaylist": "新しいプレイリスト",
+		"tracklist": "トラックリスト",
+		"noTracklist": "トラックリストはありません。",
+		"hideReview": "- レビューを非表示",
+		"addReview": "+ レビューを追加",
+		"reviewLabel": "このアルバムのレビュー",
+		"reviewPlaceholder": "このアルバムについての感想…",
+		"saving": "Rec",
+		"recIt": "Rec it!",
+		"recVisibleNotice": "このおすすめは、あなたの公開プロフィールに表示されます！",
+		"loadingAlbum": "アルバムを読み込んでいます..",
+		"notFound": "このアルバムが見つかりませんでした。",
+		"loadError": "このアルバムを一時的に読み込むことができませんでした。しばらくしてからもう一度お試しください。"
+	},
+	
+	"status": {
+		"title": "システムステータス",
+		"allOperational": "すべてのシステムは正常に稼働しています",
+		"disruption": "サービスの障害が検出されました",
+		"componentStatus": {
+			"up": "稼働中",
+			"down": "停止中"
+		},
+		"error": "ヘルスチェックエンドポイントに接続できませんでした（{{code}}）。",
+			"networkError": "ネットワークエラー",
+			"lastChecked": "最終確認：{{time}}"
+	},
+
+		"chat": {
+		"title": "メッセージ",
+		"noFriendsYet": "まだチャットできる友達がいません。",
+		"selectedFriend": "友達を選んでチャットを始めましょう。",
+		"viewProfile": "{{name}}のプロフィールを見る",
+		"noMessages": "まだメッセージはありません。挨拶してみましょう！",
+		"messagePlaceholder": "{{name}}さんにメッセージ…",
+		"typing": "入力中…",
+		"send": "メッセージを送信",
+		"online": "オンライン",
+		"offline": "オフライン",
+		"shareAlbum": "アルバムを共有",
+		"inviteBlindTest": "ブラインドテストに招待",
+		"searchAlbumPlaceholder": "アルバムを検索…",
+		"noAlbumsFound": "アルバムが見つかりませんでした。",
+		"loadingAlbum": "アルバムを読み込んでいます…",
+		"sharedAlbum": "共有されたアルバム",
+		"blindTestInvite": "ブラインドテストへの招待",
+		"tapToJoin": "タップして参加"
+	},
+
+	"friends": {
+		"title": "友達",
+		"tabs": {
+			"friends": "友達",
+			"requests": "友達申請",
+			"blocked": "ブロック中",
+			"find": "友達を探す"
+		},
+		"noFriendsYet": "まだ友達がいません。「友達を探す」から探してみましょう。.",
+		"noPendingRequests": "保留中の友達申請はありません。",
+		"noOneBlocked": "ブロックしているユーザーはいません。",
+		"noResults": "該当するユーザーが見つかりませんでした。",
+		"searching": "検索中…",
+		"searchPlaceholder": "ユーザー名を検索…",
+		"actions": {
+			"message": "メッセージ",
+			"remove": "友達から削除",
+			"block": "ブロック",
+			"unblock": "ブロックを解除",
+			"accept": "承認",
+			"decline": "拒否",
+			"add": "友達に追加" 
+		},
+		"alerts": {
+			"requestInProgress": "このユーザーにはすでに友達申請を送信しています。",
+			"cannotAddSelf": "自分自身を友達に追加することはできません。",
+			"generic": "エラーが発生しました。",
+			"blockedUser": "ユーザーが見つかりません"
+		}
+	},
+
+	"home": {
+		"pageTitle" : "ホームページ",
+		"friendsActivity": "友達のアクティビティ",
+		"forYou": "あなたへのおすすめ",
+		"noActivity": "まだアクティビティはありません。友達を追加して、友達のアクティビティを見てみましょう。",
+		"noRecs": "アルバムを評価して、おすすめを受け取りましょう。",
+		"rated": "が評価しました"
+	},
+
+	"explore": {
+		"title": "探索",
+		"surpriseMe": "おまかせ",
+		"loading": "読み込み中…",
+		"trending": "今週のトレンド",
+		"topRated": "高評価のアルバム",
+		"nothingTrending": "現在トレンドのアルバムはありません。",
+		"noRatings": "まだ評価はありません。"
+	},
+
+	"notifications": {
+		"title": "通知",
+		"ariaLabel": "通知（未読{{count}}件）",
+		"ariaLabelNoUnread": "通知",
+		"unreadAnnounce": "未読通知{{count}}件",
+		"noUnreadAnnounce": "未読の通知はありません",
+		"markAllAsRead": "すべて既読にする",
+		"empty": "まだ通知はありません。",
+		"someone": "誰か",
+		"types": {
+			"friendRequest": "{{name}}さんから友達申請が届きました",
+			"friendRequestAccepted": "{{name}}さんが友達申請を承認しました",
+			"newMessage": "{{name}}さんからメッセージが届きました",
+			"friendAlbumRated": "{{name}}さんがあなたも評価したアルバムを評価しました",
+			"ratingLikedWithTitle": "{{name}}さんが「{{title}}」へのRecにいいねしました",
+			"ratingLiked": "{{name}}さんがあなたのRecにいいねしました",
+			"ratingDeletedWithTitle": "{{name}}さんが {{title}} へのRecを削除しました",
+         "ratingDeleted": "{{name}}さんがあなたがいいねしたRecを削除しました",
+
+			"default": "新しい通知"
+		}
+	},
+
+	"privacyPolicy": {
+		"title": "プライバシーポリシー",
+		"lastUpdated": "最終更新日：2026年7月",
+		"sections": {
+			"whoWeAre": {
+				"heading": "1. 運営者について",
+				"body": "Recordは、42のカリキュラム（ft_transcendenceプロジェクト）の一環として開発された音楽評価・ソーシャルプラットフォームです。本ポリシーでは、Record利用時に収集する情報、その収集理由、および保管・保護方法について説明します。"
+			},
+			"infoWeCollect": {
+				"heading": "2. 収集する情報",
+				"account": "<strong>アカウント情報：</strong> ユーザー名、メールアドレス、安全にハッシュ化されたパスワード（パスワードを平文で保存することはありません）。",
+				"profile": "<strong>プロフィール情報：</strong> 任意のアバター画像、表示名、自己紹介文（追加・空欄はご自由に選択できます）。",
+				"activity": "<strong>アクティビティデータ：</strong> 評価したアルバムや楽曲、投稿したレビュー、視聴コレクション。",
+				"social": "<strong>ソーシャルデータ：</strong> 友達リスト、保留中の友達申請、チャット機能でやり取りされたメッセージ。",
+				"technical": "<strong>技術データ：</strong> ログイン状態を維持するためのセッションクッキー。このクッキーはサービスの機能に不可欠であり、追跡や広告目的には使用されません。"
+			},
+			"howWeUse": {
+				"heading": "3. 情報の利用方法",
+				"body": "あなたの情報はRecordの運営にのみ使用されます：認証、プロフィールと評価の他ユーザーへの表示（設定に応じて）、友達機能とチャット機能の提供、プラットフォームのセキュリティ維持。あなたのデータを販売することはなく、マーケティング目的で第三者と共有することもありません。"
+			},
+			"howWeProtect": {
+				"heading": "4. データの保護方法",
+				"body": "パスワードは保存前にハッシュ化され、私たちのチームを含め誰にも読み取ることはできません。ブラウザとサーバー間の通信はすべて暗号化されています（HTTPS）。インフラストラクチャの秘密情報へのアクセスは、最小権限アクセス制御を備えた専用のシークレット管理システムによって制限されています。サーバーは悪意のあるトラフィックをフィルタリングするWebアプリケーションファイアウォールによっても保護されています。"
+			},
+			"yourRights": {
+				"heading": "5. あなたの権利",
+				"body": "アカウント設定からいつでもプロフィール情報にアクセス、修正、削除することができます。アカウントおよび関連データの完全な削除をご希望の場合、または個人データに関するご質問がある場合は、Recordチームまでご連絡ください。"
+			},
+			"changes": {
+				"heading": "6. 本ポリシーの変更",
+				"body": "本ポリシーはプロジェクトの進展に伴い更新される場合があります。変更公開後もRecordの利用を continue することは、改訂されたポリシーへの同意とみなされます。"
+			}
+		}
+	},
+
+	"termsOfService": {
+		"title": "利用規約",
+			"lastUpdated": "最終更新日：2026年7月",
+			"sections": {
+			"acceptance": {
+				"heading": "1. 規約への同意",
+				"body": "アカウントを作成しRecordを利用することにより、本利用規約に同意したものとみなされます。同意されない場合は、本プラットフォームをご利用いただけません。"
+			},
+			"accountResponsibilities": {
+				"heading": "2. アカウントに関する責任",
+				"item1": "アカウント作成時には正確な情報を提供する必要があります。",
+				"item2": "パスワードの機密保持はご自身の責任となります。",
+				"item3": "お住まいの国においてオンラインサービスの利用に法的に同意できる年齢である必要があります。",
+				"item4": "1人につき1アカウントとし、他のユーザーになりすます行為は禁止されています。"
+			},
+			"acceptableUse": {
+				"heading": "3. 適切な利用",
+				"intro": "Recordの利用にあたり、以下の行為を行わないことに同意するものとします：",
+				"item1": "違法、嫌がらせ、憎悪的な内容、または他者の権利を侵害するコンテンツの投稿。",
+				"item2": "プラットフォームまたは他ユーザーのアカウントへの妨害、不正アクセス、ハッキングの試み。",
+				"item3": "自動化ツールを使用した、公開APIのスクレイピングまたは規定のレート制限を超える利用。",
+				"item4": "他者になりすます、または誰かとの関係性を偽って伝える行為。"
+			},
+			"content": {
+				"heading": "4. 投稿するコンテンツについて",
+				"body": "あなたが投稿するレビュー、評価、プロフィールコンテンツの所有権はあなたに帰属します。Recordにコンテンツを投稿することにより、意図された形でプラットフォーム内に表示するための非独占的なライセンスを当社に付与するものとします（例：あなたのレビューを他のユーザーに表示するなど）。投稿するコンテンツについてはご自身で責任を負うものとします。"
+			},
+			"availability": {
+				"heading": "5. 可用性",
+				"body": "Recordは学生プロジェクトであり、「現状のまま」提供され、継続的な稼働の保証はありません。サービスの現在の稼働状況は<statusPageLink>システムステータス</statusPageLink>でご確認いただけます。",
+				"statusPageLinkText": "ステータスページ"
+			},
+			"termination": {
+				"heading": "6. アカウントの停止・削除",
+				"body": "本規約に違反したアカウントについては、停止または削除する権利を留保します。アカウントはいつでも削除することができます。"
+			},
+			"changes": {
+				"heading": "7. 本規約の変更",
+				"body": "本規約はプロジェクトの進展に伴い更新される場合があります。変更公開後もRecordの利用を継続することは、改訂された規約への同意とみなされます。"
+			}
+		}
+	},
+
+	"recs": {
+		"coverAlt": {
+			"fallback": "{{title}} (カバー画像なし)",
+			"default": "{{title}}のカバー画像"
+		},
+		"noReview": "—",
+		"tracklist": "収録曲一覧",
+		"noTracklist": "収録曲一覧はありません。",
+		"notRated": "評価なし",
+		"like": "いいね",
+		"unlike": "いいねを解除",
+		"delete": "このレビューを削除",
+		"deleteConfirm": "このレビューを削除しますか？ これは取り消すことができません",
+		"fullRec": "完全なレビュー",
+		"collapse": "表示を縮小"
+	},
+
+	"rating": {
+   "rateValue": "{{value}}を5点満点で評価してください"
+	},
+
+	"blindtest": {
+		"title": "ブラインドテスト",
+		"playSolo": "ソロでプレイ",
+		"inviteFriends": "友達を招待",
+		"noFriendsYet": "招待できる友達がまだいません。",
+		"selectedCount_other": "{{count}}人選択済み",
+		"maxPlayersNote": "(最大10人まで参加可能)",
+		"invite": "招待",
+		"createGame": "ゲームを作成 ({{count}}/10人)",
+		"playersPresent": "参加者：{{count}}/10",
+		"round": "ラウンド {{current}}/{{total}}",
+		"waitingForHost": "ホストがゲームを開始するのを待っています...",
+		"playersJoined_other": "{{count}}人が参加しました",
+		"startGame": "ゲームを開始",
+		"correctAnswerWas": "正解は：",
+		"gameOver": "ゲーム終了！",
+		"quit": "退出",
+		"errors": {
+			"roomFull": "このゲームは満員です（最大10人）",
+			"timeUp": "このラウンドの制限時間が終了しました",
+			"gameFinished": "このゲームはすでに終了しています",
+			"notHost": "ホストのみがゲームを開始できます",
+			"generic": "エラーが発生しました"
+		}
+	}
+}

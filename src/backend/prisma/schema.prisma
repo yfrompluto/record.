@@ -1,0 +1,316 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+	id			Int			@id @default(autoincrement())
+	email		String		@unique
+	username	String		@unique
+	password	String		//hash argon2
+	createdAt	DateTime	@default(now())
+
+	displayName		String?
+	avatarFilename	String?
+	bio				String?
+
+	albumRatings	AlbumRating[]
+	trackRatings	TrackRating[]
+	collection	AlbumCollection[]
+	reviewLikes	ReviewLike[]
+	playlists	Playlist[]
+	blindtestGames BlindtestPlayer[]
+
+	sentFriendRequests		Friendship[]	@relation("FriendshipRequester")
+	receivedFriendRequests	Friendship[]	@relation("FriendshipAddressee")
+
+	blocksInitiated			Block[]			@relation("BlockBlocker")
+	blockedBy				Block[]			@relation("BlockBlocked")
+
+	sentMessages			Message[]		@relation("MessageSender")
+	receivedMessages		Message[]		@relation("MessageReceiver")
+
+	receivedNotifications	Notification[]	@relation("NotificationRecipient")
+	triggeredNotifications	Notification[]	@relation("NotificationActor")
+}
+
+enum FriendshipStatus {
+	PENDING
+	ACCEPTED
+	DECLINED
+}
+
+model Friendship {
+	id			Int					@id @default(autoincrement())
+	status		FriendshipStatus	@default(PENDING)
+	createdAt	DateTime			@default(now())
+	updatedAt	DateTime			@updatedAt
+
+	requester	User	@relation("FriendshipRequester", fields: [requesterId], references: [id])
+	requesterId	Int
+
+	addressee	User	@relation("FriendshipAddressee", fields: [addresseeId], references: [id])
+	addresseeId	Int
+
+	@@unique([requesterId, addresseeId])
+}
+
+model Block {
+	id			Int			@id @default(autoincrement())
+	createdAt	DateTime	@default(now())
+
+	blocker		User	@relation("BlockBlocker", fields: [blockerId], references: [id])
+	blockerId	Int
+
+	blocked		User	@relation("BlockBlocked", fields: [blockedId], references: [id])
+	blockedId	Int
+
+	@@unique([blockerId, blockedId])
+}
+
+model Message {
+	id			Int			@id @default(autoincrement())
+	content		String
+	type		String		@default("text")
+	albumMbid	String?
+	isRead		Boolean		@default(false)
+	createdAt	DateTime	@default(now())
+
+	sender		User		@relation("MessageSender", fields: [senderId], references: [id])
+	senderId	Int
+
+	receiver	User		@relation("MessageReceiver", fields: [receiverId], references: [id])
+	receiverId	Int
+}
+
+model Artist {
+	id		Int      @id @default(autoincrement())
+	mbid	String   @unique
+	name	String
+	createdAt	DateTime @default(now())
+
+	albums    AlbumArtist[]
+}
+
+model Album {
+	id			Int      @id @default(autoincrement())
+	mbid		String   @unique // release-group MBID
+	title		String
+	releaseDate  String?  // from MusicBrainz
+	releaseYear  Int?     // extracted for sort/filter
+	coverArtUrl  String?  // Cover Art Archive URL
+	createdAt    DateTime @default(now())
+
+	artists      AlbumArtist[]
+	tracks       Track[]
+	ratings      AlbumRating[]
+	collectedBy  AlbumCollection[]
+	playlistEntries PlaylistAlbum[]
+
+	@@index([releaseYear])
+}
+
+model AlbumArtist {
+	albumId  Int
+	artistId Int
+
+	album    Album  @relation(fields: [albumId], references: [id])
+	artist   Artist @relation(fields: [artistId], references: [id])
+
+	@@id([albumId, artistId])
+}
+
+model Track {
+	id			Int      @id @default(autoincrement())
+	mbid		String   @unique // recording MBID
+	title		String
+	position		Int?     // track number on the album
+	createdAt	DateTime @default(now())
+
+	album     Album    @relation(fields: [albumId], references: [id])
+	albumId   Int
+
+	ratings   TrackRating[]
+
+	@@index([albumId])
+}
+
+model AlbumRating {
+	id		Int      @id @default(autoincrement())
+	score	Float
+
+	isAutoRate	Boolean @default(true)
+
+	likes  ReviewLike[]
+
+	review	String?
+	createdAt DateTime @default(now())
+
+	user		User  @relation(fields: [userId], references: [id])
+	userId    Int
+	album     Album @relation(fields: [albumId], references: [id])
+	albumId   Int
+
+	@@unique([userId, albumId])
+
+}
+
+model TrackRating {
+	id		Int      @id @default(autoincrement())
+	score	Float
+	review		String?
+	createdAt	DateTime @default(now())
+
+	user		User  @relation(fields: [userId], references: [id])
+	userId	Int
+	track		Track @relation(fields: [trackId], references: [id])
+	trackId	Int
+
+	@@unique([userId, trackId])
+}
+
+model ReviewLike {
+	id		Int      @id @default(autoincrement())
+	createdAt	DateTime @default(now())
+
+	user		User        @relation(fields: [userId], references: [id])
+	userId	Int
+	albumRating		AlbumRating @relation(fields: [albumRatingId], references: [id])
+	albumRatingId	Int
+
+	@@unique([userId, albumRatingId])
+}
+
+model AlbumCollection {
+	id		Int      @id @default(autoincrement())
+	createdAt	DateTime @default(now())
+
+	isFavorite	Boolean  @default(false)
+
+	user		User  @relation(fields: [userId], references: [id])
+	userId	Int
+	album		Album @relation(fields: [albumId], references: [id])
+	albumId	Int
+
+	@@unique([userId, albumId])
+}
+
+enum PlaylistVisibility {
+	PUBLIC
+	PRIVATE
+}
+
+model Playlist {
+	id		Int	@id @default(autoincrement())
+	title	String
+	description	String?
+	visibility	PlaylistVisibility @default(PRIVATE)
+	createdAt	DateTime	 @default(now())
+	user		User	 @relation(fields: [userId], references: [id])
+	userId		Int
+	albums		PlaylistAlbum[]
+	@@index([userId])
+}
+
+model PlaylistAlbum {
+	id		Int	@id @default(autoincrement())
+	addedAt	DateTime @default(now())
+	playlist	Playlist @relation(fields: [playlistId], references: [id])
+	playlistId	Int
+	album		Album    @relation(fields: [albumId], references: [id])
+	albumId	Int
+	@@unique([playlistId, albumId])
+	@@index([playlistId])
+}
+
+enum NotificationType {
+	FRIEND_REQUEST
+	FRIEND_REQUEST_ACCEPTED
+	NEW_MESSAGE
+	FRIEND_ALBUM_RATED
+	RATING_LIKED
+	RATING_DELETED
+}
+
+model Notification {
+	id			Int					@id @default(autoincrement())
+	type		NotificationType
+	isRead		Boolean				@default(false)
+	payload		Json?
+	createdAt	DateTime			@default(now())
+
+	recipient	User	@relation("NotificationRecipient", fields: [recipientId], references: [id])
+	recipientId	Int
+
+	actor		User?	@relation("NotificationActor", fields: [actorId], references: [id])
+	actorId		Int?
+
+	@@index([recipientId, isRead])
+}
+
+enum BlindtestGameStatus {
+	WAITING
+	IN_PROGRESS
+	FINISHED
+}
+
+model BlindtestGame {
+	id			Int					@id @default(autoincrement())
+	status		BlindtestGameStatus	@default(WAITING)
+	sessionId	String				@unique
+	hostUserId	Int?
+	createdAt	DateTime			@default(now())
+	finishedAt	DateTime?
+
+	players		BlindtestPlayer[]
+	rounds		BlindtestRound[]
+}
+
+model BlindtestPlayer {
+	id		Int @id @default(autoincrement())
+	score	Int @default(0)
+	hasLeft Boolean	@default(false)
+
+	user	User					@relation(fields: [userId], references: [id])
+	userId	Int
+	game	BlindtestGame			@relation(fields: [gameId], references: [id])
+	gameId	Int
+
+	answers	BlindtestAnswer[]
+
+	@@unique([userId, gameId])
+}
+
+model BlindtestRound {
+	id				Int				@id @default(autoincrement())
+	roundNumber		Int
+	createdAt		DateTime		@default(now())
+
+	trackDeezerId	BigInt
+	trackTitle		String
+	trackArtist		String
+	trackPreviewUrl	String
+
+	game	BlindtestGame			@relation(fields: [gameId], references: [id])
+	gameId	Int
+
+	answers BlindtestAnswer[]
+
+	@@unique([gameId, roundNumber])
+}
+
+model BlindtestAnswer {
+	id				Int				@id @default(autoincrement())
+	answerText		String
+	isCorrect		Boolean
+	answeredAt		DateTime		@default(now())
+
+	player			BlindtestPlayer	@relation(fields: [playerId], references: [id])
+	playerId		Int
+	round			BlindtestRound	@relation(fields: [roundId], references: [id])
+	roundId			Int
+}
