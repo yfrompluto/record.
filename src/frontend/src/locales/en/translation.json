@@ -1,0 +1,495 @@
+{
+	"auth": {
+		"brand": "Record.",
+		"login": {
+			"title": "Welcome back,",
+			"subtitle": "Burn a new album to your personal collection!",
+			"usernameLabel": "username",
+			"passwordLabel": "password",
+			"submit": "Sign in",
+			"submitting": "Signing in...",
+			"noAccount": "Don't have an account yet?",
+			"signUpLink": "Sign up",
+			"error": "Wrong username and/or password!"
+		},
+		"register": {
+			"title": "Welcome,",
+			"subtitle": "Add any album to your personal collection & rec it!",
+			"usernameLabel": "Username",
+			"usernameHint": "4–20 characters. Letters, numbers, _ and . only.",
+			"emailLabel": "Email",
+			"passwordLabel": "Password",
+			"submit": "Sign up",
+			"submitting": "Signing up...",
+			"hasAccount": "Already have an account?",
+			"signInLink": "Sign in",
+			"passwordRules": {
+				"minLength": "At least 8 characters",
+				"uppercase": "One uppercase letter",
+				"lowercase": "One lowercase letter",
+				"digit": "One digit",
+				"specialChar": "One special character"
+			},
+		"errors": {
+			"passwordInvalid": "Password does not meet all requirements.",
+			"conflict": "Username or email already in use.",
+			"badRequest": "Invalid email and/or password.",
+			"generic": "Something went wrong... Please try again."
+			}
+		},
+		"showPassword": "Show password",
+		"hidePassword": "Hide password"
+	},
+
+	"visibility": {
+		"public": "Public",
+		"private": "Private"
+	},
+
+	"languageSwitcher": { "label": "Choose language" },
+	
+	"common": {
+		"unknownArtist": "Unknown artist",
+		"backToTop": "Back to top",
+		"starsRating": "{{count}} out of 5 stars",
+		"valid": "valid",
+		"invalid": "invalid"
+	},
+
+	"album": {
+		"coverAlt": "{{title}}'s cover",
+		"noCoverAlt": "No cover available for {{title}} ",
+		"openAlbum": "Open {{title}}",
+		"starRating": "Rating: {{rating}}/5"
+	},
+
+	"navbar": {
+		"brand": "Record.",
+		"searchLabel": "Search for an album",
+		"searchPlaceholder": "Look up for your favourite music...",
+		"searching": "Searching...",
+		"noResults": "Couldn't find what you're looking for..",
+		"searchError": "Uh oh, an error occured. Please try again in a moment.",
+		"clearHistory": "Clear history",
+		"links": {
+			"explore": "Explore",
+			"collection": "Collection",
+			"playlists": "Playlists",
+			"friends": "Friends",
+			"blindTest": "Blind Test",
+			"myProfile": "My Profile",
+			"chat": "Chat"
+		},
+		"openProfilePanel": "Open profile panel",
+		"recentSearches": "Recent searches",
+		"skipToContent" : "Skip to main content", 
+		"mainNavigation" : "Main navigation"
+	},
+
+	"footer": {
+		"privacyPolicy": "Privacy Policy",
+		"termsOfService": "Terms of Service",
+		"systemStatus": "System Status",
+		"copyright": "© {{year}} Record. All rights reserved."
+	},
+
+	"profile": {
+		"message": "💬 Message",
+		"tabs": {
+			"activity": "Activity",
+			"recs": "Recs",
+			"playlists": "Playlists",
+			"friends": "Friends"
+		},
+		"sections": "Profile sections",
+		"favs": "Favs",
+		"noFavsYet": "—",
+		"favCoverAlt": "{{title}}'s cover",
+		"noCover": "Cover unavailable",
+		"recentRecs": "Recent recs",
+		"recentActivity": "Recent activity",
+		"noRecsYet": "No album recs yet.",
+		"noActivityYet": "No listening sessions recorded yet.",
+		"noRecsTab": "Stars speak louder than words — rec your first album.",
+		"playlistsComingSoon": "Playlists are comming soon.",
+		"noFriendsYet": "No friends yet.",
+		"relationship": {
+			"add": "+ Add",
+			"onHold": "On hold...",
+			"requestReceived": "Request received",
+			"friend": "✓ Friend",
+			"blocked": "Blocked"
+		}
+	},
+
+	"profilePanel": {
+		"dialogLabel": "My profile",
+		"editProfile": "Edit profile",
+		"backToView": "Back to profile view",
+		"closePanel": "Close profile panel",
+		"updatePicture": "Update profile picture",
+		"update": "Update",
+		"noBio": "—",
+		"stats": {
+			"sectionTitle": "Activity stats",
+			"ratings": "Recs",
+			"collection": "Collection",
+			"playlists": "Playlists",
+			"avgRating": "Average",
+			"favoriteArtist": "Favorite Artist"
+		},
+		"viewFullProfile": "View my full profile →",
+		"chatAriaLabel": "Chat ({{count}} unread messages)",
+		"form": {
+			"displayNameLabel": "Display name",
+			"bioLabel": "Let other people know you better...",
+			"saving": "Saving changes...",
+			"save": "Save"
+		},
+		"errors": {
+			"avatarUploadFailed": "Uh oh.. Failed to load the profile picture.",
+			"saveFailed": "Something went wrong. Please try again."
+		},
+		"signOut": "Sign out"
+	},
+
+	"collection": {
+		"title": "My Collection",
+		"searchLabel": "Search your collection",
+		"searchPlaceholder": "Search by album, artist or track...",
+		"loading": "Loading your collection...",
+		"emptySearch": "No albums match your search.",
+		"emptyDefault": "Your collection is empty for now.",
+		"noCover": "No cover",
+		"backToTop": "Back to top",
+		"coverAlt": "Cover of {{title}}",
+		"favorite": {
+			"add": "Add {{title}} to favorites",
+			"remove": "Remove {{title}} from favorites"
+		},
+		"pagination": {
+			"ariaLabel": "Pagination"
+		},
+		"errors": {
+			"loadFailed": "Could not load your collection. Please try again.",
+			"maxFavorites": "You can have a maximum of 3 favourite albums.",
+			"favoriteUpdateFailed": "Could not update favourites. Please try again."
+		}
+	},
+
+	"notFound": {
+   	"pageNotFound": "Whoops, page not found."
+	},
+
+	"playlists": {
+		"newPlaylist": "+ Create new playlist",
+		"cancelCreate": "Cancel",
+		"emptyMine": "Set a vibe, keep a memory — create a playlist.",
+		"emptyUser": "This user has no public playlists.",
+		"viewPlaylist": "View playlist",
+		"makePublic": "Make playlist public",
+		"makePrivate": "Make playlist private",
+		"visibilityPrivateBadge": "Private",
+		"visibilityPublicBadge": "Public",
+		"panel": {
+			"contents": "Contents",
+			"loading": "Loading...",
+			"empty": "No albums yet.",
+			"edit": "Edit",
+			"deletePlaylist": "Delete",
+			"addAlbumPlaceholder": "Search for an album to add...",
+			"searching": "Searching...",
+			"add": "Add",
+      	"deleteConfirm": "Delete \"{{title}}\"? This cannot be undone.",
+			"errors": {
+				"loadFailed": "Couldn't load this playlist.",
+				"searchFailed": "Search failed.",
+				"deleteFailed": "Couldn't delete this playlist.",
+				"addFailed": "Couldn't add this album.",
+				"removeFailed": "Couldn't remove this album."
+			}
+		},
+
+	"recpage": {
+		"collectionError": "An error occurred while managing the collection.",
+		"playlistUpdateError": "An error occurred while updating the playlist.",
+		"createPlaylistError": "An error occurred while creating a playlist.",
+		"saveErrorGeneric": "Couldn't save your rec. Rate the album as a whole, or rate at least one track.",
+		"unknownArtist": "Unknown artist",
+		"inCollection": "In my collection",
+		"addToCollection": "Add to collection",
+		"inPlaylists_one": "In {{count}} playlist",
+		"inPlaylists_other": "In {{count}} playlists",
+		"addToPlaylist": "Add to playlist",
+		"loadingPlaylists": "Loading playlists…",
+		"noPlaylists": "No playlists yet.",
+		"playlistNamePlaceholder": "Playlist name",
+		"newPlaylist": "New playlist",
+		"tracklist": "Tracklist",
+		"noTracklist": "No tracklist available.",
+		"hideReview": "- Hide review",
+		"addReview": "+ Add review",
+		"reviewLabel": "Your review of this album",
+		"reviewPlaceholder": "My thoughts on this album..",
+		"saving": "Rec",
+		"recIt": "Rec it!",
+		"recVisibleNotice": "This rec will be visible on your public profile!",
+		"loadingAlbum": "Loading album...",
+		"notFound": "This album couldn't be found.",
+		"loadError": "Momentarily couldn't load this album. Try again in an instant."
+	},
+
+
+		"errors": {
+			"titleRequired": "Please provide a title to your playlist.",
+			"createFailed": "Couldn't create the playlist.",
+			"saveFailed": "Couldn't save changes."
+		},
+		"form": {
+			"titleLabel": "Title",
+			"descriptionLabel": "Description...",
+			"visibilityPrivate": "Private",
+			"visibilityPublic": "Public",
+			"submit": "Create playlist",
+			"creating": "Creating...",
+			"save": "Save",
+			"saving": "Saving...",
+			"cancel": "Cancel"
+		}
+	},
+
+	"status": {
+		"title": "System Status",
+		"allOperational": "All systems operational",
+		"disruption": "Service disruption detected",
+		"componentStatus": {
+			"up": "up",
+			"down": "down"
+		},
+		"error": "Unable to reach the health endpoint ({{code}}).",
+			"networkError": "network error",
+			"lastChecked": "Last checked: {{time}}"
+	},
+
+	"chat": {
+		"title": "Messages",
+		"noFriendsYet": "No friends to talk to yet.",
+		"selectedFriend": "Select a friend to start chatting.",
+		"viewProfile": "View {{name}}'s profile",
+		"noMessages": "No message yet. Say hello!",
+		"messagePlaceholder": "Message to {{name}}...",
+		"typing": "Is typing...",
+		"send": "Send message",
+		"online": "Online",
+		"offline": "Offline",
+		"shareAlbum": "Share an album",
+		"inviteBlindTest": "Invite to Blind Test",
+		"searchAlbumPlaceholder": "Search for an album...",
+		"noAlbumsFound": "No albums found.",
+		"loadingAlbum": "Loading album...",
+		"sharedAlbum": "Shared Album",
+		"blindTestInvite": "Blind Test Invite",
+		"tapToJoin": "Tap to join the game"
+	},
+
+	"friends": {
+		"title": "Friends",
+		"tabs": {
+			"friends": "Friends",
+			"requests": "Requests",
+			"blocked": "Blocked",
+			"find": "Find"
+		},
+		"noFriendsYet": "No friends yet. Go take a look in « Find ».",
+		"noPendingRequests": "No pending requests.",
+		"noOneBlocked": "No one is blocked.",
+		"noResults": "No results.",
+		"searching": "Searching...",
+		"searchPlaceholder": "Search for a username...",
+		"actions": {
+			"message": "Message",
+			"remove": "Remove",
+			"block": "Block",
+			"unblock": "Unblock",
+			"accept": "Accept",
+			"decline": "Decline",
+			"add": "Add" 
+		},
+		"alerts": {
+			"requestInProgress": "A request is already in progress for this user.",
+			"cannotAddSelf": "You cannot add yourself as a friend.",
+			"generic": "An error occurred.",
+			"blockedUser": "User not found"
+		}
+	},
+
+	"home": {
+		"pageTitle" : "Home page",
+		"friendsActivity": "Friends Activity",
+		"forYou": "For You",
+		"noActivity": "No activity yet — add some friends to see what they're listening to.",
+		"noRecs": "Rate some album to get recommendations.",
+		"rated": "rated"
+	},
+
+	"explore": {
+		"title": "Explore",
+		"surpriseMe": "Surprise Me",
+		"loading": "Loading ...",
+		"trending": "Trending This Week",
+		"topRated": "Top Rated",
+		"nothingTrending": "Nothing trending yet.",
+		"noRatings": "No ratings yet."
+	},
+
+	"notifications": {
+		"title": "Notifications",
+		"ariaLabel": "Notifications ({{count}} unread)",
+		"ariaLabelNoUnread": "Notifications",
+		"unreadAnnounce": "{{count}} unread notifications",
+		"noUnreadAnnounce": "No unread notifications",
+		"markAllAsRead": "Mark all as read",
+		"empty": "No notifications yet.",
+		"someone": "Someone",
+		"types": {
+			"friendRequest": "{{name}} sent you a friend request",
+			"friendRequestAccepted": "{{name}} accepted your friend request",
+			"newMessage": "{{name}} sent you a message",
+			"friendAlbumRated": "{{name}} rated an album you rated too",
+			"ratingLikedWithTitle": "{{name}} liked your rec for \"{{title}}\"",
+			"ratingLiked": "{{name}} liked your rec",
+			"ratingDeletedWithTitle": "{{name}} deleted a rec you liked for \"{{title}}\"",
+			"ratingDeleted": "{{name}} deleted a rec you liked",
+			"default": "New notification"
+		}
+	},
+
+
+	"privacyPolicy": {
+		"title": "Privacy Policy",
+		"lastUpdated": "Last updated: July 2026",
+		"sections": {
+			"whoWeAre": {
+				"heading": "1. Who we are",
+				"body": "Record is a music rating and social platform developed as part of the 42 curriculum (ft_transcendence project). This policy explains what information we collect when you use Record, why we collect it, and how it is stored and protected."
+			},
+			"infoWeCollect": {
+				"heading": "2. Information we collect",
+				"account": "<strong>Account information:</strong> username, email address, and a securely hashed password (we never store your password in plain text).",
+				"profile": "<strong>Profile information:</strong> optional avatar image, display name, and biography, which you may choose to add or leave blank.",
+				"activity": "<strong>Activity data:</strong> the albums and songs you rate, reviews you write, and your listening collection.",
+				"social": "<strong>Social data:</strong> your friends list, pending friend requests, and messages exchanged through the chat feature.",
+				"technical": "<strong>Technical data:</strong> a session cookie used to keep you signed in. This cookie is essential for the service to function and is not used for tracking or advertising."
+			},
+			"howWeUse": {
+				"heading": "3. How we use your information",
+				"body": "Your information is used solely to operate Record: authenticating you, displaying your profile and ratings to other users (according to your settings), enabling the friends and chat features, and keeping the platform secure. We do not sell your data, and we do not share it with third parties for marketing purposes."
+			},
+			"howWeProtect": {
+				"heading": "4. How we protect your data",
+				"body": "Passwords are hashed before storage and are never readable by anyone, including our team. All communication between your browser and our servers is encrypted (HTTPS). Access to our infrastructure secrets is restricted through a dedicated secrets management system with least-privilege access controls. Our servers are also protected by a web application firewall that filters malicious traffic."
+			},
+			"yourRights": {
+				"heading": "5. Your rights",
+				"body": "You may access, correct, or delete your profile information at any time from your account settings. If you wish to permanently delete your account and associated data, or if you have any question regarding your personal data, please contact a member of the Record team."
+			},
+			"changes": {
+				"heading": "6. Changes to this policy",
+				"body": "This policy may be updated as the project evolves. Continued use of Record after changes are published constitutes acceptance of the revised policy."
+			}
+		}
+	},
+
+	"termsOfService": {
+		"title": "Terms of Service",
+		"lastUpdated": "Last updated: July 2026",
+		"sections": {
+			"acceptance": {
+				"heading": "1. Acceptance of terms",
+				"body": "By creating an account and using Record, you agree to these Terms of Service. If you do not agree with them, please do not use the platform."
+			},
+			"accountResponsibilities": {
+				"heading": "2. Account responsibilities",
+				"item1": "You must provide accurate information when creating your account.",
+				"item2": "You are responsible for keeping your password confidential.",
+				"item3": "You must be old enough to legally consent to use online services in your country.",
+				"item4": "One account per person; impersonating another user is not permitted."
+			},
+			"acceptableUse": {
+				"heading": "3. Acceptable use",
+				"intro": "When using Record, you agree not to:",
+				"item1": "Post content that is illegal, harassing, hateful, or infringes on others' rights.",
+				"item2": "Attempt to disrupt, hack, or gain unauthorized access to the platform or other users' accounts.",
+				"item3": "Use automated tools to scrape or abuse the public API beyond its documented rate limits.",
+				"item4": "Impersonate another person or misrepresent your affiliation with anyone."
+			},
+			"content": {
+				"heading": "4. Content you submit",
+				"body": "You retain ownership of the reviews, ratings, and profile content you submit. By posting content on Record, you grant us a non-exclusive license to display it within the platform as intended (e.g., showing your reviews to other users). You are responsible for the content you post."
+			},
+			"availability": {
+				"heading": "5. Availability",
+				"body": "Record is a student project and is provided \"as is,\" without guarantee of uninterrupted availability. You can check the current operational status of our services on our <statusPageLink>status page</statusPageLink>.",
+				"statusPageLinkText": "status page"
+			},
+			"termination": {
+				"heading": "6. Termination",
+				"body": "We reserve the right to suspend or terminate accounts that violate these terms. You may delete your account at any time."
+			},
+			"changes": {
+				"heading": "7. Changes to these terms",
+				"body": "These terms may be updated as the project evolves. Continued use of Record after changes are published constitutes acceptance of the revised terms."
+			}
+		}
+	},
+
+	"recs": {
+		"coverAlt": {
+			"fallback": "{{title}} (no cover available)",
+			"default": "{{title}}'s cover"
+		},
+		"noReview": "—",
+		"tracklist": "Tracklist",
+		"noTracklist": "No tracklist available.",
+		"notRated": "Not rated",
+		"like": "Like",
+		"unlike": "Unlike",
+		"delete": "Delete this rec",
+		"deleteConfirm": "Delete this rec? This cannot be undone",
+		"fullRec": "Full rec",
+		"collapse": "See less"
+	},
+
+	"rating": {
+		"rateValue": "Rate {{value}} out of 5"
+	},
+
+	"blindtest": {
+		"title": "Blind Test",
+		"playSolo": "Play solo",
+		"inviteFriends": "Invite friends",
+		"noFriendsYet": "You don't have any friends to invite yet.",
+		"selectedCount_one": "{{count}} selected",
+		"selectedCount_other": "{{count}} selected",
+		"maxPlayersNote": "(max 10 players per game)",
+		"invite": "Invite",
+		"createGame": "Create game ({{count}}/10 players)",
+		"playersPresent": "Players present: {{count}}/10",
+		"round": "Round {{current}}/{{total}}",
+		"waitingForHost": "Waiting for the host to start the game...",
+		"playersJoined_one": "{{count}} player joined",
+		"playersJoined_other": "{{count}} players joined",
+		"startGame": "Start game",
+		"correctAnswerWas": "The correct answer was:",
+		"gameOver": "Game over!",
+		"quit": "Quit",
+		"errors": {
+			"roomFull": "This game is already full (10 players max)",
+			"timeUp": "Time is up for this round",
+			"gameFinished": "This game is already finished",
+			"notHost": "Only the host can start the game",
+			"generic": "Something went wrong"
+		}
+	}
+}
+

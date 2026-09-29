@@ -1,0 +1,177 @@
+# ========================================== SERVICES
+services:
+  vault:
+    build:
+      context: ./vault/
+      dockerfile: Dockerfile
+    container_name: vault
+    volumes:
+      - vault-data:/vault/data
+      - vault-logs:/vault/logs
+      - vault-nginx:/vault/nginx
+      - vault-backend:/vault/backend
+      - vault-postgres:/vault/postgres
+      - vault-backup:/vault/backup
+      - vault-redis:/vault/redis  
+    networks:
+      - network-backend
+    restart: always
+    #ports:
+      #- "8200:8200" # Pour acces au ui
+    healthcheck:
+      test: ["CMD", "vault", "status"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 2m
+
+  backend:
+    build:
+      context: ./backend/
+      dockerfile: Dockerfile
+    container_name: backend
+    volumes:
+      - vault-backend:/vault/backend
+      - avatars:/avatars
+    networks:
+      - network-backend
+    restart: always
+    depends_on:
+      vault:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  postgres:
+    build:
+      context: ./database/postgres
+      dockerfile: Dockerfile
+    container_name: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - vault-postgres:/vault/postgres
+    networks:
+      - network-backend
+    restart: always
+    depends_on:
+      vault:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app_user -d transcendence"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  nginx:
+    build:
+      context: ./nginx/
+      dockerfile: Dockerfile
+    container_name: nginx
+    environment:
+      - HTTP2=off
+    volumes:
+      - vault-nginx:/vault/nginx:ro
+      - frontend-dist:/usr/share/nginx/html:ro
+      - avatars:/usr/share/nginx/avatars:ro
+    networks:
+      - network-frontend
+      - network-backend
+    ports:
+      - "8443:8443"
+    depends_on:
+      vault:
+        condition: service_healthy
+      frontend:
+        condition: service_completed_successfully
+      backend:
+        condition: service_healthy 
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-k", "-f", "https://localhost:8443/", "-o", "/dev/null"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  frontend:
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    container_name: frontend
+    volumes:
+      - frontend-dist:/output
+    networks:
+      - network-frontend
+
+  backup:
+    build:
+      context: ./backup/
+      dockerfile: Dockerfile
+    container_name: backup
+    volumes:
+      - vault-backup:/vault/backup
+      - postgres-backups:/backups
+    networks:
+      - network-backend
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "pgrep crond || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    depends_on:
+      vault:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  redis:
+    build:
+      context: ./redis/
+      dockerfile: Dockerfile
+    container_name: redis
+    volumes:
+      - vault-redis:/vault/redis
+      - redis-data:/data
+    networks:
+      - network-backend
+    depends_on:
+      vault:
+        condition: service_healthy
+    healthcheck:
+        test: ["CMD-SHELL", "redis-cli -a \"$(cat /vault/redis/redis_password)\" ping | grep -q PONG"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+        start_period: 20s
+    restart: always
+
+# ========================================== VOLUMES
+volumes:
+  vault-data:
+  vault-logs:
+  postgres-data:
+  vault-nginx:
+  vault-backend:
+  vault-postgres:
+  vault-redis:
+  redis-data:
+  frontend-dist:
+  avatars:
+  vault-backup:
+  postgres-backups:
+
+# ========================================== NETWORKS
+networks:
+  network-backend:
+  network-frontend:
